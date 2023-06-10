@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="AnchorPane" prefHeight="434.0" prefWidth="585.0" stylesheets="@../../assets/LoginPages.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdminController.AdminLoginPageController">
+   <children>
+      <Label alignment="CENTER" layoutX="150.0" layoutY="38.0" prefHeight="46.0" prefWidth="266.0" style="-fx-font-size: 24;" styleClass="Label" text="Admin Login">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="admin_usernameTF" layoutX="194.0" layoutY="143.0" prefHeight="27.0" prefWidth="178.0" promptText="Username" styleClass="Label" text="doc" />
+      <PasswordField fx:id="admin_passwordTF" layoutX="194.0" layoutY="217.0" prefHeight="26.0" prefWidth="178.0" promptText="Password" styleClass="Label" text="doc" />
+      <Label layoutX="199.0" layoutY="113.0" styleClass="Label" text="Username: ">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="194.0" layoutY="188.0" styleClass="Label" text="Password:">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="admin_LoginBTN" layoutX="243.0" layoutY="269.0" mnemonicParsing="false" onAction="#admin_LoginBTN_Handler" prefHeight="27.0" prefWidth="78.0" styleClass="Button" text="Login" />
+      <Button fx:id="loginAsPatient" layoutX="392.0" layoutY="385.0" mnemonicParsing="false" onAction="#loginAsPatient_Handler" prefHeight="27.0" prefWidth="178.0" styleClass="ButtonControlSize" text="Login As a Patient" />
+      <Label fx:id="statusLabel" alignment="CENTER" layoutX="63.0" layoutY="324.0" prefHeight="31.0" prefWidth="458.0" style="-fx-text-fill: red;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="694.0" prefWidth="963.0" stylesheets="@../../assets/dashboardPages.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PatientController.PatientDashboardPageController">
+   <children>
+      <Label layoutX="345.0" layoutY="31.0" style="-fx-text-fill: grey;" text="Patient Dashboard">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font></Label>
+      <TableView fx:id="FreeAppointmentsTV" layoutX="14.0" layoutY="110.0" prefHeight="262.0" prefWidth="608.0">
+         <columns>
+            <TableColumn fx:id="appointment_date_col" prefWidth="186.39999675750732" text="appointment date " />
+            <TableColumn fx:id="appointment_day_col" prefWidth="165.5999755859375" text="appointment day" />
+            <TableColumn fx:id="appointment_time_col" prefWidth="154.4000244140625" text="appointment time" />
+            <TableColumn fx:id="status_col" prefWidth="100.0" text="status" />
+         </columns>
+      </TableView>
+      <TableView fx:id="BookedTV" layoutX="134.0" layoutY="430.0" prefHeight="200.0" prefWidth="367.0">
+        <columns>
+          <TableColumn fx:id="booked_id_col" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="booked_status_col" prefWidth="75.0" text="status" />
+            <TableColumn fx:id="booked_drcomment_col" prefWidth="215.99998779296874" text="Doctor Commnet" />
+        </columns>
+      </TableView>
+      <VBox layoutX="542.0" layoutY="494.0" prefHeight="71.0" prefWidth="252.0" spacing="20.0">
+         <children>
+            <Button fx:id="showWaitingBTN" mnemonicParsing="false" onAction="#showWaitingBTN_Handler" prefHeight="26.0" prefWidth="274.0" text="Show My Waitng Appointments" />
+            <Button fx:id="showFinishedBTN" mnemonicParsing="false" onAction="#showFinishedBTN_Handler" prefHeight="26.0" prefWidth="301.0" text="Show My Finished Appointments" />
+         </children>
+      </VBox>
+      <VBox layoutX="668.0" layoutY="218.0" prefHeight="71.0" prefWidth="252.0" spacing="20.0">
+         <children>
+            <Button fx:id="ShowAllFree_BTN" mnemonicParsing="false" onAction="#ShowAllFree_BTN_Handler" prefHeight="26.0" prefWidth="299.0" text="Show All Free Appointments" />
+            <Button fx:id="Book_BTN" mnemonicParsing="false" onAction="#Book_BTN_Handler" prefHeight="26.0" prefWidth="349.0" text="Book An Appointment" />
+         </children>
+      </VBox>
+      <Button fx:id="logoutBTN" layoutX="734.0" layoutY="29.0" mnemonicParsing="false" onAction="#logoutBTN_Handler" prefHeight="32.0" prefWidth="119.0" text="Logout">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

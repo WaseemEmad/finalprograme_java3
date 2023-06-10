@@ -1,0 +1,30 @@
+Button#firstName_SearchBTN {
+    -fx-background-color: #FFC0CB; /* Pink background color */
+    -fx-text-fill: #FFFFFF; /* White text color */
+    -fx-pref-width: 231px;
+}
+
+Button {
+    -fx-background-color: #FFC0CB; /* Pink background color */
+    -fx-text-fill: #FFFFFF; /* White text color */
+    
+}
+
+HBox {
+    -fx-spacing: 10px;
+}
+
+TextField {
+    -fx-background-color: #FFFFFF; /* White background color */
+    -fx-pref-width: 194px;
+}
+
+VBox {
+    -fx-background-color: #E0E0E0; /* Light grey background color */
+    
+}
+
+Label {
+    
+    -fx-text-fill: #333333; /* Dark grey text color */
+}

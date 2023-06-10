@@ -1,0 +1,50 @@
+#AnchorPane {
+    -fx-background-color: #f5f5f5; /* Set the background color of the AnchorPane */
+}
+
+.Label {
+    -fx-font-family: "Arial", sans-serif; /* Set the font family for labels */
+    -fx-font-size: 30px; /* Set the font size for labels */
+    -fx-text-fill: #333333; /* Set the text color for labels */
+    -fx-font-weight: bold; /* Set the font weight to bold for labels */
+    -fx-alignment: center; /* Center align the text within labels */
+}
+
+.TextField, .PasswordField {
+    -fx-prompt-text-fill: #888888; /* Set the color of the prompt text */
+    -fx-font-family: "Arial", sans-serif; /* Set the font family for text fields */
+    -fx-font-weight: bold; /* Set the font weight to bold for text fields */
+    -fx-background-color: #ffffff; /* Set the background color for text fields */
+    -fx-border-color: #cccccc; /* Set the border color for text fields */
+    -fx-border-width: 1px; /* Set the border width for text fields */
+}
+
+.Label {
+    -fx-font-family: "Arial", sans-serif; /* Set the font family for labels */
+    -fx-font-size: 16px; /* Set the font size for labels */
+    -fx-text-fill: #555555; /* Set the text color for labels */
+    -fx-font-weight: bold; /* Set the font weight to bold for labels */
+}
+
+.Button {
+    -fx-background-color: #ff4081; /* Set the background color of the button */
+    -fx-text-fill: #ffffff; /* Set the text color of the button */
+    -fx-font-family: "Arial", sans-serif; /* Set the font family for the button text */
+    -fx-font-weight: bold; /* Set the font weight to bold for the button text */
+    -fx-font-size: 14px; /* Set the font size of the button text */
+    -fx-pref-width: 80px; /* Set the preferred width of the button */
+}
+
+.Button:hover {
+    -fx-background-color: #e91e63; /* Set the background color of the button on hover */
+}
+
+
+
+.ButtonControlSize {
+    -fx-background-color: #ff4081; /* Set the background color of the button */
+    -fx-text-fill: #ffffff; /* Set the text color of the button */
+    -fx-font-family: "Arial", sans-serif; /* Set the font family for the button text */
+    -fx-font-weight: bold; /* Set the font weight to bold for the button text */
+   
+}

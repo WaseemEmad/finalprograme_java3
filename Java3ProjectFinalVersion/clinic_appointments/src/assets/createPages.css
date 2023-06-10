@@ -1,0 +1,44 @@
+/* Styling for AnchorPane */
+#AnchorPane {
+    -fx-background-color: #f8f8f8; /* Light gray */
+}
+
+/* Styling for Labels */
+Label {
+    -fx-text-fill: #e91e63; /* Pink */
+    -fx-font-size: 14px;
+}
+
+/* Styling for TextFields */
+TextField {
+    -fx-background-color: #ffffff; /* White */
+    -fx-prompt-text-fill: #9e9e9e; /* Dark gray */
+}
+
+/* Styling for RadioButtons */
+RadioButton {
+    -fx-text-fill: #e91e63; /* Pink */
+}
+
+/* Styling for Buttons */
+Button {
+    -fx-background-color: #e91e63; /* Pink */
+    -fx-text-fill: #ffffff; /* White */
+    -fx-font-size: 14px;
+}
+
+/* Styling for ToggleGroup */
+.toggle-group > .radio-button:selected .radio {
+    -fx-background-color: #e91e63; /* Pink */
+}
+
+/* Styling for ToggleGroup (Mouse Hover) */
+.toggle-group > .radio-button:hover .radio {
+    -fx-background-color: #ffcdd2; /* Light pink */
+}
+
+/* Styling for ToggleGroup (Mouse Pressed) */
+.toggle-group > .radio-button:pressed .radio {
+    -fx-background-color: #ad1457; /* Dark pink */
+}
+
